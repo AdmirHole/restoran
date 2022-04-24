@@ -1,7 +1,27 @@
 .hei-5 {
-  height: 50vh!important;
+  height: 50vh !important;
 }
 
 .hei-10 {
-  height: 100vh!important;
+  height: 100vh !important;
+}
+
+.image {
+  width: 50%;
+}
+
+.logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+body {
+  background-color: rgb(17 17 17);
+  color: white;
+}
+
+td,
+th{
+  color: aliceblue;
 }
