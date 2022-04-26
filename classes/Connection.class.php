@@ -5,9 +5,9 @@ class Connection {
 	private $_connection;
 
 	private $_hostname = "localhost";
-	private $_username = "root";
-	private $_password = "";
-    private $_database = "restoran";
+	private $_username = "caffeosc_oscar";
+	private $_password = "Thegodfather2022";
+    private $_database = "caffeosc_restoran";
 	
 	
 	private static $_instance; 
