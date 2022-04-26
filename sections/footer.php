@@ -1,8 +1,5 @@
-    <div class="footer">
-        <div class="copyright">
-            <span>Copyright &copy; 2020<span> | <a href="index">Lab387</a>
-        </div>
-    </div>
+    <!-- <div class="footer">
+    </div> -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
