@@ -80,7 +80,14 @@ $(document).ready(function () {
         })
     })
 
-    
+    $(document).on('click','.hide', function(){
+        let id = $(this).attr("id");
+        if ($("#tbody"+id).hasClass("d-none")) {
+            $("#tbody"+id).removeClass("d-none");
+        }else{
+            $("#tbody"+id).addClass("d-none");
+        }
+    });
 
     //END READY
 })

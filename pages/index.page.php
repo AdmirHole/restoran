@@ -8,13 +8,14 @@ $grupe = $class->get_menu();
         <div class="logo"><img src="./dist/images/oscar.jpg" alt="" class="image"></div>
         <table class="table">
             <?php
+            $i = 1;
             foreach ($grupe as $key => $value) {
-                echo "<thead>
+                echo "<thead class='hide' id='$i'>
                         <tr>
                             <th scope='col'>{$key}</th>
                             <th scope='col'></th>
                         </tr>
-                    </thead><tbody>";
+                    </thead><tbody id='tbody$i'>";
                 foreach ($value as $key) {
                     echo "
                         <tr>
@@ -23,6 +24,7 @@ $grupe = $class->get_menu();
                         </tr>
                         ";
                 }
+                $i++;
                 echo "</tbody>";
             }
             ?>
