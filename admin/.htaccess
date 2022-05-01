@@ -1,0 +1,16 @@
+# This part will load language and page on demand through GET variables
+RewriteEngine on
+
+RewriteRule ^([a-zA-Z_-]+)$ index.php?page=$1 [NC,L,QSA]
+
+#Options -Indexes
+
+
+<IfModule mod_headers.c>
+    SetEnvIf Origin "http(s)?://(www\.)?(logo.lab387.com|calculy.lab387.com)$" AccessControlAllowOrigin=$0$1
+    Header add Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+    Header set Access-Control-Allow-Credentials true
+</IfModule>
+
+
+
